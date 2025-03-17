@@ -98,7 +98,7 @@ void display(QUEUE queue){
 	}else{
 		
 		int i = queue.front;
-		for(i; i!=queue.rear; (i+1)%ARRAY_SIZE){
+		for(i; i!=queue.rear; i=((i+1)%ARRAY_SIZE)){
 			printf("%d ",queue.data[i]);
 		}
 		
